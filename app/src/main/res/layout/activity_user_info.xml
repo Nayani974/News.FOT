@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F8E9"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Back Button -->
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_back_arrow"
+            android:contentDescription="Back Button"
+            android:layout_gravity="start"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Information"
+            android:textSize="24sp"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-medium"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <!-- Profile Image -->
+        <ImageView
+            android:id="@+id/imgUser"
+            android:layout_width="169dp"
+            android:layout_height="169dp"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/ic_profile_default"
+            android:scaleType="centerCrop"
+            android:contentDescription="User Image" />
+
+        <!-- Info Box -->
+        <TextView
+            android:id="@+id/tvUserInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:padding="16dp"
+            android:background="#D9D9D9"
+            android:text="Name: \n\nEmail: "
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif"
+            android:lineSpacingExtra="6dp" />
+
+        <!-- Edit Info Button -->
+        <Button
+            android:id="@+id/btnEditInfo"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="24dp"
+            android:text="Edit Info"
+            android:backgroundTint="#43A047"
+            android:textColor="#FFFFFF"
+            android:fontFamily="sans-serif-medium"
+            android:textStyle="bold" />
+
+        <!-- Sign Out Button -->
+        <Button
+            android:id="@+id/btnSignOut"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:text="Sign Out"
+            android:backgroundTint="#E53935"
+            android:textColor="#FFFFFF"
+            android:fontFamily="sans-serif-medium"
+            android:textStyle="bold" />
+    </LinearLayout>
+</ScrollView>
